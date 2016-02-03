@@ -96,7 +96,7 @@ gulp.task('image', function() {
 
 gulp.task('css', function() {
 	gulp.src(config.path.css)
-	//	.pipe(concat('lib.css'))
+		.pipe(concat('vendor-libs-min.css'))
 		.pipe(gulp.dest(config.path.dist + '/css'));
 });
 

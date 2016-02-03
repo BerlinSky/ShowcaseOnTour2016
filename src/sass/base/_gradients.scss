@@ -1,0 +1,56 @@
+//colors
+$wild_sand: #f4f4f4;
+$alto: #dbdbdb;
+$color_fuscous_gray_approx: #4f4f4f;
+$color_heavy_metal_approx: #2d2d2d;
+$color_picton_blue_approx: #3ea7ee;
+$color_lochmara_approx: #1681c8;
+$color_slate_gray_approx: #657c8b;
+$color_blue_bayoux_approx: #4e616e;
+$color_scarlet_approx: #f21919;
+$color_monza_approx: #d51414;
+$color_web_orange_approx: #ffa800;
+$color_tangerine_approx: #ee8c00;
+$white: #ffffff;
+$color_gallery_approx: #ededed;
+
+.gray-degrade {
+	background: $wild_sand;
+	background: linear-gradient(to bottom, $wild_sand 0,$alto 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$wild_sand', endcolorstr='$alto',gradienttype=0 );
+}
+.dark-gray-degrade {
+	background: $color_fuscous_gray_approx;
+	background: linear-gradient(to bottom, $color_fuscous_gray_approx 0,$color_heavy_metal_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_fuscous_gray_approx', endcolorstr='$color_heavy_metal_approx',gradienttype=0 );
+}
+.dark-gray-degrade-diagonal {
+	background: $color_fuscous_gray_approx;
+	background: linear-gradient(135deg, $color_fuscous_gray_approx 0,$color_heavy_metal_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_fuscous_gray_approx', endcolorstr='$color_heavy_metal_approx',gradienttype=1 );
+}
+.blue-degrade {
+	background: $color_picton_blue_approx;
+	background: linear-gradient(to bottom, $color_picton_blue_approx 0,$color_lochmara_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_picton_blue_approx', endcolorstr='$color_lochmara_approx',gradienttype=0 );
+}
+.dark-blue-degrade {
+	background: $color_slate_gray_approx;
+	background: linear-gradient(to bottom, $color_slate_gray_approx 0,$color_blue_bayoux_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_slate_gray_approx', endcolorstr='$color_blue_bayoux_approx',gradienttype=0 );
+}
+.red-degrade {
+	background: $color_scarlet_approx;
+	background: linear-gradient(to bottom, $color_scarlet_approx 0,$color_monza_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_scarlet_approx', endcolorstr='$color_monza_approx',gradienttype=0 );
+}
+.orange-degrade {
+	background: $color_web_orange_approx;
+	background: linear-gradient(to bottom, $color_web_orange_approx 0,$color_tangerine_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_web_orange_approx', endcolorstr='$color_tangerine_approx',gradienttype=0 );
+}
+.white-degrade {
+	background: $white;
+	background: linear-gradient(to bottom, $white 0,$color_gallery_approx 100%);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$white', endcolorstr='$color_gallery_approx',gradienttype=0 );
+}

@@ -118,6 +118,7 @@ gulp.task('sass', function () {
 
 gulp.task('jslib', function() {
 	gulp.src(config.path.jslib)
+		.pipe(concat('vendor-libs.js'))
 		.pipe(gulp.dest(config.path.dist + '/scripts'));
 });
 

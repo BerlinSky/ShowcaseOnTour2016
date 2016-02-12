@@ -201,7 +201,7 @@ ul {
   overflow: hidden;
   position: relative; }
 
-layout-section-container-plus {
+.layout-section-container-plus {
   background: #333 url(../images/ln-bg-dark.jpg) repeat;
   margin: 0 auto;
   padding: 70px 0 80px;
@@ -209,6 +209,15 @@ layout-section-container-plus {
   width: 100%;
   text-align: center;
   position: relative; }
+
+.layout-site-socials {
+  padding: 0;
+  background-color: #ffffff; }
+
+.layout-footer {
+  padding: 45px;
+  text-align: center;
+  background: #222; }
 
 ul.nav ul.dropdown-menu {
   padding: 0;
@@ -488,22 +497,19 @@ ul.dropdown-menu li a:hover {
   #site-socials .top-button:hover {
     color: #1a9bd7; }
 
-.footer {
-  padding: 45px;
-  text-align: center;
-  background: #222; }
-  .footer h2.company-name {
-    margin-top: 0;
-    padding-top: 0;
-    font-size: 35px; }
-  .footer p.copyright {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 15px;
-    color: #999999;
-    font-size: 14px; }
-    .footer p.copyright a:hover {
-      color: #1a9bd7; }
+.footer h2.company-name {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 35px; }
+
+.footer p.copyright {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 15px;
+  color: #999999;
+  font-size: 14px; }
+  .footer p.copyright a:hover {
+    color: #1a9bd7; }
 
 @media only screen and (min-width: 1920px) {
   .home {

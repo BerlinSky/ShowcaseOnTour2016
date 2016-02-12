@@ -55,7 +55,7 @@
   position: relative;
 }
 
-layout-section-container-plus {
+.layout-section-container-plus {
   background: $color_mine_shaft_approx $url_6 repeat;
   margin: 0 auto;
   padding: 70px 0 80px;
@@ -63,5 +63,16 @@ layout-section-container-plus {
   width: 100%;
   text-align: center;
   position: relative;
+}
+
+.layout-site-socials {
+  padding: 0;
+  background-color: $white;
+}
+
+.layout-footer  {
+  padding: 45px;
+  text-align: center;
+  background: $color_log_cabin_approx;
 }
 

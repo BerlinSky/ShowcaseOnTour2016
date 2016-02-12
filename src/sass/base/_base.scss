@@ -25,6 +25,7 @@ img {
   background-color: $color_cararra_approx;
 }
 
+// TODO: Move out
 .clear {
   clear: both;
 }
@@ -44,8 +45,8 @@ a {
     text-decoration: none;
     outline: none;
   }
+  // TODO: Move out
   &.timeline-image img:hover {
-    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
     transform: scale(1.2);
   }
 }

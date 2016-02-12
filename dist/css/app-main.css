@@ -168,17 +168,47 @@ ul {
   background-color: #f1f1f1;
   z-index: 9999; }
 
+.layout-nav {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  z-index: 1031;
+  transition: all 0.5s; }
+  @media only screen and (max-width: 1170px) {
+    .layout-nav {
+      padding: 0 20px; } }
+
 .layout-home {
+  background: url(../images/box-03.jpg) center center fixed;
   position: relative;
   width: 100%;
   height: auto;
-  top: 0; }
+  top: 0;
+  background-size: 100%; }
+  .layout-home:after {
+    clear: both; }
 
 .layout-section-container {
   width: 100%;
   height: auto;
   padding: 0;
   margin: 0; }
+
+.layout-static-content {
+  background: url(../images/ln-box-23.jpg) center center fixed;
+  padding: 70px 0;
+  text-align: center;
+  overflow: hidden;
+  position: relative; }
+
+layout-section-container-plus {
+  background: #333 url(../images/ln-bg-dark.jpg) repeat;
+  margin: 0 auto;
+  padding: 70px 0 80px;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  position: relative; }
 
 ul.nav ul.dropdown-menu {
   padding: 0;
@@ -206,27 +236,21 @@ ul.dropdown-menu li a:hover {
   background: rgba(0, 0, 0, 0.1);
   color: #1a9bd7 !important; }
 
-#navigation {
-  position: fixed;
-  width: 100%;
-  height: 75px;
-  z-index: 1031;
-  transition: all 0.5s; }
-  #navigation .mini-nav-button {
-    color: #777;
-    display: none;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    font-size: 25px;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    cursor: pointer;
-    transform: translateY(-50%); }
-    #navigation .mini-nav-button:hover {
-      color: #1a9bd7;
-      transition: all 0.3s; }
+#navigation .mini-nav-button {
+  color: #777;
+  display: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 25px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%); }
+  #navigation .mini-nav-button:hover {
+    color: #1a9bd7;
+    transition: all 0.3s; }
 
 .visible-nav {
   top: 0; }
@@ -380,53 +404,41 @@ ul.dropdown-menu li a:hover {
     height: 150px;
     padding: 0; }
 
-.static-content-02 {
-  background: url(../images/ln-box-23.jpg) center center fixed;
-  padding: 70px 0;
-  text-align: center;
+.static-content-02 .flex-direction-nav {
+  width: 52px;
+  height: 300px;
+  margin: -35px auto 0 auto;
+  position: relative;
+  opacity: 1; }
+  .static-content-02 .flex-direction-nav li {
+    display: block;
+    position: relative;
+    float: left;
+    width: 26px;
+    height: 26px; }
+    .static-content-02 .flex-direction-nav li a {
+      opacity: 1;
+      width: 26px;
+      height: 26px;
+      background: url(../images/white-nav-controls.png); }
+      .static-content-02 .flex-direction-nav li a.flex-prev {
+        background-position: left top;
+        left: -5px; }
+        .static-content-02 .flex-direction-nav li a.flex-prev:hover {
+          background-position: left bottom; }
+      .static-content-02 .flex-direction-nav li a.flex-next {
+        background-position: right top;
+        right: -5px; }
+        .static-content-02 .flex-direction-nav li a.flex-next:hover {
+          background-position: right bottom; }
+  .static-content-02 .flex-direction-nav a:before {
+    display: none; }
+
+#more-news .morenews-items {
+  height: auto;
+  width: 100%;
   overflow: hidden;
   position: relative; }
-  .static-content-02 .flex-direction-nav {
-    width: 52px;
-    height: 300px;
-    margin: -35px auto 0 auto;
-    position: relative;
-    opacity: 1; }
-    .static-content-02 .flex-direction-nav li {
-      display: block;
-      position: relative;
-      float: left;
-      width: 26px;
-      height: 26px; }
-      .static-content-02 .flex-direction-nav li a {
-        opacity: 1;
-        width: 26px;
-        height: 26px;
-        background: url(../images/white-nav-controls.png); }
-        .static-content-02 .flex-direction-nav li a.flex-prev {
-          background-position: left top;
-          left: -5px; }
-          .static-content-02 .flex-direction-nav li a.flex-prev:hover {
-            background-position: left bottom; }
-        .static-content-02 .flex-direction-nav li a.flex-next {
-          background-position: right top;
-          right: -5px; }
-          .static-content-02 .flex-direction-nav li a.flex-next:hover {
-            background-position: right bottom; }
-    .static-content-02 .flex-direction-nav a:before {
-      display: none; }
-
-#more-news {
-  background: #333 url(../images/ln-bg-dark.jpg) repeat;
-  margin: 0 auto;
-  padding: 70px 0 80px;
-  overflow: hidden;
-  width: 100%; }
-  #more-news .morenews-items {
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    position: relative; }
 
 #more-info {
   background: url(../images/ln-box-22.jpg) top center fixed;
@@ -500,8 +512,6 @@ ul.dropdown-menu li a:hover {
     background-size: 100%; } }
 
 @media only screen and (max-width: 1170px) {
-  #navigation {
-    padding: 0 20px; }
   .post-dates {
     width: 6%; }
   .post-details {
@@ -1071,13 +1081,6 @@ ul.dropdown-menu li a:hover {
 
 .texture-bg {
   background: #333 url(../images/ln-bg-dark.jpg) repeat; }
-
-.home {
-  background: url(../images/box-03.jpg) center center fixed;
-  position: relative;
-  background-size: 100%; }
-  .home:after {
-    clear: both; }
 
 .home-animated {
   background-image: url(../images/box-02.jpg);

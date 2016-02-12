@@ -186,14 +186,14 @@
   background: $color_mine_shaft_approx $url_6 repeat;
 }
 
-.home {
-  background: $url_7 center center fixed;
-  position: relative;
-  background-size: 100%;
-  &:after {
-    clear: both;
-  }
-}
+// .home {
+//   background: $url_7 center center fixed;
+//   position: relative;
+//   background-size: 100%;
+//   &:after {
+//     clear: both;
+//   }
+// }
 .home-animated {
   background-image: $url_8;
   background-size: cover;

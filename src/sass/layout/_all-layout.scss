@@ -7,12 +7,38 @@
   z-index: 9999;
 }
 
+.layout-nav {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  z-index: 1031;
+  transition: all 0.5s;
+
+  @media only screen and(max-width: 1170px) {
+    padding: 0 20px;
+  }
+}
+
 .layout-home {
+  background: $url_7 center center fixed;
   position: relative;
   width: 100%;
   height: auto;
   top: 0;
+  background-size: 100%;
+  &:after {
+    clear: both;
+  }
 }
+
+// .home {
+//   background: $url_7 center center fixed;
+//   position: relative;
+//   background-size: 100%;
+//   &:after {
+//     clear: both;
+//   }
+// }
 
 .layout-section-container {
 	width: 100%;
@@ -20,3 +46,22 @@
   padding: 0;
   margin: 0;
 }
+
+.layout-static-content {
+  background: $url_18 center center fixed;
+  padding: 70px 0;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+layout-section-container-plus {
+  background: $color_mine_shaft_approx $url_6 repeat;
+  margin: 0 auto;
+  padding: 70px 0 80px;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+

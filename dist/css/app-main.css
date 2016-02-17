@@ -407,9 +407,9 @@ ul.dropdown-menu li a:hover {
     #slides .slides-navigation a:hover {
       opacity: 1 !important; }
 
-#static-content-01 {
+.static-content-01 {
   background: #333 url(../images/ln-bg-dark.jpg) repeat; }
-  #static-content-01 .static-content-01 .facts .fact {
+  .static-content-01 .static-content-01 .facts .fact {
     height: 150px;
     padding: 0; }
 
@@ -1231,7 +1231,7 @@ ul.dropdown-menu li a:hover {
   min-height: 70px; }
 
 ul.tables {
-  margin: 70px auto 0; }
+  margin: 30px auto 0; }
 
 ul.tables li.tour-table {
   cursor: default; }
@@ -1250,12 +1250,20 @@ ul.tables li.tour-table {
   width: 100%;
   padding: 0; }
 
+.tour-table .tour-table-event {
+  width: 100%;
+  padding: 0;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .tour-table .tour-table-top h3 {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   width: 100%;
   margin-left: -15px;
-  padding: 15px 0px 10px 0px;
+  padding: 10px 0px 7px 0px;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4); }
@@ -1267,7 +1275,8 @@ ul.tables li.tour-table {
   overflow: hidden; }
 
 .tour-table-top a.tour-table-img img {
-  width: 100%; }
+  width: 100%;
+  max-height: 80px; }
 
 .table-inner ul.tour-events {
   margin: 0px 0 0;

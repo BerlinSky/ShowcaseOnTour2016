@@ -1,0 +1,62 @@
+//------------------------------------------------------------------------------------------------- //
+// Mixin for the responsiveness (measurements)
+//------------------------------------------------------------------------------------------------- //
+@mixin responsive-xs() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin responsive-sm() {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin responsive-md() {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin responsive-lg() {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin responsive-sm-minus() {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin responsive-md-plus() {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin box-sizing($sizing) {
+  -webkit-box-sizing: $sizing;
+  -moz-box-sizing: $sizing;
+  box-sizing: $sizing;
+}
+
+// Example: How to use the responsiveness Mixin:
+.testResponsiveDiv {
+  background-color: black;
+  
+  @include responsive-xs() {
+  	background-color: red;
+  }
+  
+  @include responsive-sm() {
+  	background-color: green;
+  }
+  
+  @include responsive-md() {
+  	background-color: blue;
+  }
+  
+  @include responsive-lg() {
+  	background-color: orange;
+  }
+}
